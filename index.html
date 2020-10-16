@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final JS CORE</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="noLoginNav">
+            <div class="noLoginNav__change">
+                <button class="noLoginNav__change--change topButton" disabled>
+                    <img class="img" src="./img/code-slash-icon_1.png" alt="code-slash">
+                </button>
+            </div>
+            <div class="noLoginNav__textWeight">
+                <button class="noLoginNav__textWeight--bolt topButton" value="bold">
+                    <img value="bold" class="img" src="./img/type-bold-icon_1.png" alt="type-bold">
+                </button>
+                <button class="noLoginNav__textWeight--italics topButton" value="italics">
+                    <img class="img" src="./img/type-italic-icon_1.png" alt="type-italic">
+                </button>
+                <button class="noLoginNav__textWeight--strikethrough topButton" value="underline">
+                    <img class="img" src="./img/type-underline-icon_1.png" alt="type-underline">
+                </button>
+                <button class="noLoginNav__textWeight--strikeout topButton" value="line-through">
+                    <img class="img" src="./img/type-strikethrough-icon_1.png" alt="type-strikethrough">
+                </button>
+            </div>
+            <div class="noLoginNav__textPosition">
+                <button class="noLoginNav__textPosition--left topButton">
+                    <img class="img" src="./img/text-align-left-icon_1.png" alt="text-align-left">
+                </button>
+                <button class="noLoginNav__textPosition--center topButton">
+                    <img class="img" src="./img/text-align-center-icon_1.png" alt="text-align-center">
+                </button>
+                <button class="noLoginNav__textPosition--right topButton">
+                    <img class="img" src="./img/text-right-icon_1.png" alt="text-right">
+                </button>
+            </div>
+            <div class="noLoginNav__textStyle">
+                <button class="noLoginNav__textStyle--fontFamily topButton">
+                    <img class="img" src="./img/font-icon_3.png" alt="font">
+                    <img class="imgTriangle" src="./img/triangle-down-icon_2.png" alt="imgTriangle">
+                </button>
+                <div class="allFontFamily">
+                    <div class="arialFontFamily">Arial</div>
+                    <div class="georgiaFontFamily">Georgia</div>
+                    <div class="impactFontFamily">Impact</div>
+                    <div class="tahomaFontFamily">Tahoma</div>
+                    <div class="romanFontFamily">Times New Roman</div>
+                    <div class="verdanaFontFamily">Verdana</div>
+                </div>
+                <button class="noLoginNav__textStyle--size topButton">
+                    <img class="img" src="./img/line-height-icon_1.png" alt="line-height">
+                    <img class="imgTriangle" src="./img/triangle-down-icon_2.png" alt="imgTriangle">
+                </button>
+                <div class="fontsSize">
+                    <div class="fontsSize__12px fontsSize__px">12px</div>
+                    <div class="fontsSize__14px fontsSize__px">14px</div>
+                    <div class="fontsSize__16px fontsSize__px">16px</div>
+                    <div class="fontsSize__18px fontsSize__px">18px</div>
+                    <div class="fontsSize__20px fontsSize__px">20px</div>
+                    <div class="fontsSize__22px fontsSize__px">22px</div>
+                    <div class="fontsSize__25px fontsSize__px">25px</div>
+                    <div class="fontsSize__30px fontsSize__px">30px</div>
+
+                </div>
+                <button class="noLoginNav__textStyle--textColor topButton">
+                    <img class="img" src="./img/color-palette-icon_3 (1).png" alt="line-height">
+                </button>
+                <div class="textColor">
+                    <div class="textColor__text">
+                        <span class="textColor__text--choose">Choose text Color</span>
+                        <img class="closeTextColor" src="./img/close-icon_11.png" alt="close">
+                    </div>
+                    <div class="xColor">
+                        <button value="aquamarine" class="textColor__aquamarine allTextColor"></button>
+                        <button value="cadetblue" class="textColor__cadetblue allTextColor"></button>
+                        <button value="forestgreen" class="textColor__forestgreen allTextColor"></button>
+                        <button value="green" class="textColor__green allTextColor"></button>
+                        <button value="lightblue" class="textColor__lightblue allTextColor"></button>
+                        <button value="blue" class="textColor__blue allTextColor"></button>
+                        <button value="blueviolet" class="textColor__blueviolet allTextColor"></button>
+                        <button value="darkorchid" class="textColor__darkorchid allTextColor"></button>
+                        <button value="darkslateblue" class="textColor__darkslateblue allTextColor"></button>
+                        <button value="darkslategray" class="textColor__darkslategray allTextColor"></button>
+                        <button value="yellow" class="textColor__yellow allTextColor"></button>
+                        <button value="orange" class="textColor__orange allTextColor"></button>
+                        <button value="darkorange" class="textColor__darkorange allTextColor"></button>
+                        <button value="darkgoldenrod" class="textColor__darkgoldenrod allTextColor"></button>
+                        <button value="coral" class="textColor__coral allTextColor"></button>
+                        <button value="brown" class="textColor__brown allTextColor"></button>
+                        <button value="whitesmoke" class="textColor__whitesmoke allTextColor"></button>
+                        <button value="aliceblue" class="textColor__aliceblue allTextColor"></button>
+                        <button value="gray" class="textColor__gray allTextColor"></button>
+                        <button value="darkgray" class="textColor__darkgray allTextColor"></button>
+                        <button value="black" class="textColor__black allTextColor"></button>
+                    </div>
+                </div>
+                <button class="noLoginNav__textStyle--bgColor topButton">
+                    <img class="img" src="./img/picture-icon_6.png" alt="line-height">
+                </button>
+                <div class="bgColor">
+                    <div class="bgColor__text">
+                        <span class="bgColor__text--choose">Choose background color or image</span>
+                        <img class="closeBgColor" src="./img/close-icon_11.png" alt="close">
+                    </div>
+                    <div class="navButton">
+                        <button class="colors">Colors</button>
+                        <button class="images">Images</button>
+                        <button class="files">Files</button>
+                    </div>
+                    <div class="xBgColor">
+                        <button value="aquamarine" class="textColor__aquamarine allTextColor"></button>
+                        <button value="cadetblue" class="textColor__cadetblue allTextColor"></button>
+                        <button value="forestgreen" class="textColor__forestgreen allTextColor"></button>
+                        <button value="green" class="textColor__green allTextColor"></button>
+                        <button value="lightblue" class="textColor__lightblue allTextColor"></button>
+                        <button value="blue" class="textColor__blue allTextColor"></button>
+                        <button value="blueviolet" class="textColor__blueviolet allTextColor"></button>
+                        <button value="darkorchid" class="textColor__darkorchid allTextColor"></button>
+                        <button value="darkslateblue" class="textColor__darkslateblue allTextColor"></button>
+                        <button value="darkslategray" class="textColor__darkslategray allTextColor"></button>
+                        <button value="yellow" class="textColor__yellow allTextColor"></button>
+                        <button value="orange" class="textColor__orange allTextColor"></button>
+                        <button value="darkorange" class="textColor__darkorange allTextColor"></button>
+                        <button value="darkgoldenrod" class="textColor__darkgoldenrod allTextColor"></button>
+                        <button value="coral" class="textColor__coral allTextColor"></button>
+                        <button value="brown" class="textColor__brown allTextColor"></button>
+                        <button value="whitesmoke" class="textColor__whitesmoke allTextColor"></button>
+                        <button value="aliceblue" class="textColor__aliceblue allTextColor"></button>
+                        <button value="gray" class="textColor__gray allTextColor"></button>
+                        <button value="darkgray" class="textColor__darkgray allTextColor"></button>
+                        <button value="black" class="textColor__black allTextColor"></button>
+                    </div>
+                    <div class="allbgImage">
+                        <div class="bgImage1 bgImage"></div>
+                        <div class="bgImage2 bgImage"></div>
+                        <div class="bgImage3 bgImage"></div>
+                        <div class="bgImage4 bgImage"></div>
+                        <div class="bgImage5 bgImage"></div>
+                        <div class="bgImage6 bgImage"></div>
+                        <div class="bgImage7 bgImage"></div>
+                        <div class="bgImage8 bgImage"></div>
+                        <div class="bgImage9 bgImage"></div>
+                    </div>
+                    <div class="downloadImage">
+                        <input id="file" type="file" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="noLoginNav__login">
+                <button class="noLoginNav__login--on topButton">
+                    <img class="img" src="./img/lock-icon_2.png" alt="lock">
+                </button>
+            </div>
+            <div class="onLoginNav__login">
+                <button class="onLoginNav__login--on topButton">
+                    <img class="img" src="./img/lock-unlock-icon_1.png" alt="lock-unlock">
+                </button>
+            </div>
+        </nav>
+        <nav class="loginNav">
+            <div class="loginNav__button">
+                <button class="loginNav__button--out topButton">
+                    <img class="img" src="./img/door-open-icon_1.png" alt="door-open">
+                </button>
+            </div>
+            <div class="loginNav__table">
+                <button class="loginNav__table--create topButton">
+                    <img class="img" src="./img/table-icon_6.png" alt="table">
+                </button>
+            </div>
+            <div class="modalTable">
+                <div class="modalTable__body">
+                    <div class="modalTable__body--title">
+                        <span>Create table</span>
+                        <img class="closeTable" src="./img/close-icon_11.png" alt="close">
+                    </div>
+                    <div class="modalTable__body--section">
+                        <div class="modalTable__body--section1">
+                            <label for="countTR">Count TR:</label>
+                            <input type="text" class="countTR" name="countTR" id="countTR">
+                            <label for="wingthTD">Width of TD:</label>
+                            <input type="text" id="wingthTD">
+                            <label for="widthBorder">Width of border:</label>
+                            <input type="text" name="widthBorder" id="widthBorder">
+                        </div>
+                        <div class="modalTable__body--section2">
+                            <label for="countTD">Count TD:</label>
+                            <input type="text" name="countTD" class="countTD" id="countTD">
+                            <label for="heightTD">Height of TD:</label>
+                            <input type="text" id="heightTD">
+                            <div class="selectTable">
+                                <label>Style of border:
+                                    <select name="typeBorder" class="typeBorder">
+                                        <option selected disabled>choose style</option>
+                                        <option value="solid">solid</option>
+                                        <option value="dashed">dashed</option>
+                                        <option value="dotted">dotted</option>
+                                        <option value="double">double</option>
+                                        <option value="groove">groove</option>
+                                        <option value="ridge">ridge</option>
+                                        <option value="inset">inset</option>
+                                        <option value="outset">outser</option>
+                                    </select>
+                                </label>
+                                <label>Color of border:
+                                    <select name="colorBorder" class="colorBorder">
+                                        <option selected disabled>choose color</option>
+                                        <option value="black">black</option>
+                                        <option value="red">red</option>
+                                        <option value="green">green</option>
+                                        <option value="blue">blue</option>
+                                        <option value="yellow">yellow</option>
+                                        <option value="white">white</option>
+                                        <option value="gray">gray</option>
+                                        <option value="pink">pink</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ifValidTable">
+                        <p class="validTable"></p>
+                    </div>
+                    <div class="tableButton">
+                        <button class="resetTable">Reset</button>
+                        <button class="createTable">Create table</button>
+                    </div>
+                </div>
+            </div>
+            <div class="loginNav__ol">
+                <button class="loginNav__ol--create topButton">
+                    <img class="img" src="./img/list-ol-icon_4.png" alt="list-ol">
+                </button>
+            </div>
+            <div class="modalOl">
+                <div class="modalOl__body">
+                    <div class="modalOl__body--title">
+                        <span>Create Ol</span>
+                        <img class="closeOl" src="./img/close-icon_11.png" alt="close">
+                    </div>
+                    <div class="modalOl__body--section">
+                        <label>Count li item:</label>
+                        <input type="text" class="countLi" id="countLi" placeholder="Type here...">
+                        <label>Type mark of list:
+                            <br>
+                            <select name="styleLi" id="styleLi">
+                                <option selected disabled>choose Ol type Mark</option>
+                                <option value="decimal">1</option>
+                                <option value="upper-roman">I</option>
+                                <option value="lower-roman">i</option>
+                                <option value="upper-alpha">A</option>
+                                <option value="lower-alpha">a</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="validOl">
+                        <p class="ifValidOl"></p>
+                    </div>
+                    <div class="olButton">
+                        <button class="resetOl">Reset</button>
+                        <button class="createOl">Create list</button>
+                    </div>
+                </div>
+            </div>
+            <div class="loginNav__li">
+                <button class="loginNav__li--create topButton">
+                    <img class="img" src="./img/list-icon_15.png" alt="list-ul">
+                </button>
+            </div>
+            <div class="modalUi">
+                <div class="modalUi__body">
+                    <div class="modalUi__body--title">
+                        <span>Create Ul</span>
+                        <img class="closeUi" src="./img/close-icon_11.png" alt="close">
+                    </div>
+                    <div class="modalUi__body--section">
+                        <label>Count li item:</label>
+                        <input type="text" class="countUl" id="countUl" placeholder="Type here...">
+                        <label>Type mark of list:
+                            <br>
+                            <select name="styleUi" id="styleUi">
+                                <option selected disabled>choose Ul type Mark</option>
+                                <option value="circle">circle</option>
+                                <option value="disc">disc</option>
+                                <option value="square">square</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="validUi">
+                        <p class="ifValidUi"></p>
+                    </div>
+                    <div class="uiButton">
+                        <button class="resetUi">Reset</button>
+                        <button class="createUi">Create list</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="divScreen">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque sint dolore accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque sint dolore accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque sint dolore accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque sint dolore accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque sint dolore accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque sint dolore accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque sint dolore accusamus!</p>
+    </section>
+    <section>
+        <textarea class="textareaScreen" cols="30" rows="10"></textarea>
+    </section>
+    <div class="signIn">
+        <div class="sign__body">
+            <div class="signIn__text">
+                <p class="signIn__text--p">Sing In</p>
+            </div>
+            <div class="signIn__input">
+                <input class="signIn__input--login" type="text">
+                <input class="signIn__input--password" type="password">
+                <p class="signIn__input--text"></p>
+            </div>
+            <div class="signIn__button">
+                <button class="signIn__button--sign">Sing in</button>
+            </div>
+        </div>
+    </div>
+    <div class="singOut">
+        <div class="singOut__body">
+            <div class="singOut__body--button">
+                <button class="cansel">Cansel</button>
+                <button class="signOut">Sign out</button>
+            </div>
+        </div>
+    </div>
+    <div class="emptyDiv"></div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

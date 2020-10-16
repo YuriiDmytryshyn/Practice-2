@@ -1,0 +1,836 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.noLoginNav {
+    width: 100%;
+    height: 150px;
+    background-color: slategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.divScreen {
+    width: 100%;
+    min-height: 75vh;
+    padding: 20px;
+}
+
+.divScreen p {
+    line-height: 1.9em;
+    padding: 10px;
+    user-select: none;
+}
+
+.noLoginNav__change, .noLoginNav__textWeight, .noLoginNav__textPosition, .noLoginNav__textStyle {
+    margin-right: 30px;
+}
+
+.topButton {
+    background-color: white;
+    height: 30px;
+    width: 50px;
+    outline: none;
+    border: 1px solid white;
+    margin-left: -4px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.signIn {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(78, 78, 78, 0.7);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.singOut {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(78, 78, 78, 0.7);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.singOut__body {
+    background-color: white;
+    width: 200px;
+    height: 70px;
+    margin: 250px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.cansel {
+    width: 80px;
+    height: 40px;
+    background-color: darkslategrey;
+    color: white;
+    outline: none;
+    border: 1px solid darkslategrey;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.signOut {
+    width: 80px;
+    height: 40px;
+    background-color: tomato;
+    color: white;
+    outline: none;
+    border: 1px solid tomato;
+    border-radius: 4px;
+}
+
+.modalTable {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(78, 78, 78, 0.7);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.modalOl, .modalUi {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(78, 78, 78, 0.7);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.modalOl__body, .modalUi__body {
+    height: 270px;
+    width: 430px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.modalTable__body {
+    height: 370px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.modalOl__body--section, .modalUi__body--section {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#countLi, #styleLi, #styleUi, #countUl {
+    width: 400px;
+    height: 25px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.ifValidTable, .ifValidUi {
+    margin-top: 10px;
+}
+
+.olButton, .uiButton {
+    margin-top: 20px;
+}
+
+.tableButton {
+    margin-top: 20px;
+}
+
+.modalTable__body--title span, .modalOl__body--title span, .modalUi__body--title span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.modalTable__body--section {
+    display: flex;
+}
+
+.modalTable__body--section1 {
+    width: 280px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.modalTable__body--section2 {
+    width: 280px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.closeTable, .closeOl, .closeUi {
+    width: 20px;
+    height: 20px;
+    line-height: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.modalTable__body--title, .modalOl__body--title, .modalUi__body--title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+.countTR, #wingthTD, #heightTD, .countTD, #widthBorder {
+    height: 25px;
+    width: 280px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.countTD {
+    margin-top: -8px;
+}
+
+.resetTable {
+    height: 25px;
+    width: 280px;
+    border-radius: 4px;
+    outline: none;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.resetOl, .resetUi {
+    height: 25px;
+    width: 200px;
+    border-radius: 4px;
+    outline: none;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.resetTable:active, .resetOl:active, .resetUi:active {
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 0px 0px 1px 1px red;
+}
+
+.selectTable {
+    display: flex;
+}
+
+.typeBorder {
+    margin-top: 10px;
+    width: 135px;
+    height: 25px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.colorBorder {
+    margin-top: 10px;
+    width: 135px;
+    height: 25px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.createOl, .createUi {
+    height: 25px;
+    width: 200px;
+    border-radius: 4px;
+    outline: none;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.createTable {
+    height: 25px;
+    width: 280px;
+    border-radius: 4px;
+    outline: none;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.createTable:active, .createOl:active, .createUi:active {
+    outline: none;
+    border: 1px solid green;
+    box-shadow: 0px 0px 1px 1px green;
+}
+
+#heightTD {
+    margin-top: -15px;
+}
+
+.sign__body {
+    height: 250px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.signIn__input--login, .signIn__input--password {
+    margin-top: 10px;
+    width: 350px;
+    height: 30px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.signIn__input {
+    display: flex;
+    flex-direction: column;
+}
+
+.signIn__text--p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.signIn__button--sign {
+    width: 350px;
+    height: 30px;
+    color: white;
+    background-color: slategrey;
+    outline: none;
+    border: 1px solid slategrey;
+    border-radius: 5px;
+}
+
+.topButton:active {
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    outline: none;
+    box-shadow: 0px 0px 1px 1px lightgrey;
+}
+
+.noLoginNav__change--change:disabled {
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+}
+
+.img {
+    height: 20px;
+    width: 20px;
+    line-height: 30px;
+}
+
+.noLoginNav__change--change, .noLoginNav__login--on, .onLoginNav__login--on {
+    border-radius: 5px;
+}
+
+.onLoginNav__login--on {
+    display: none;
+}
+
+.noLoginNav__textWeight--bolt, .noLoginNav__textPosition--left, .noLoginNav__textStyle--fontFamily, .loginNav__button--out {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.noLoginNav__textWeight--strikeout, .noLoginNav__textPosition--right, .noLoginNav__textStyle--bgColor, .loginNav__li--create {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.allFontFamily {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: -130px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: none;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+    width: 180px;
+}
+
+.arialFontFamily {
+    margin-top: 10px;
+    height: 30px;
+    font-family: Arial;
+    padding-left: 15px;
+    line-height: 30px;
+}
+
+.arialFontFamily:hover, .georgiaFontFamily:hover, .impactFontFamily:hover, .tahomaFontFamily:hover, .romanFontFamily:hover, .verdanaFontFamily:hover {
+    background-color: lightgrey;
+}
+
+.georgiaFontFamily {
+    padding-left: 15px;
+    line-height: 30px;
+    height: 30px;
+    font-family: Georgia;
+}
+
+.impactFontFamily {
+    padding-left: 15px;
+    line-height: 30px;
+    height: 30px;
+    font-family: Impact;
+}
+
+.tahomaFontFamily {
+    padding-left: 15px;
+    line-height: 30px;
+    height: 30px;
+    font-family: Tahoma;
+}
+
+.romanFontFamily {
+    padding-left: 15px;
+    line-height: 30px;
+    height: 30px;
+    font-family: 'Times New Roman';
+}
+
+.verdanaFontFamily {
+    padding-left: 15px;
+    line-height: 30px;
+    height: 30px;
+    font-family: 'verdana';
+    margin-bottom: 10px;
+}
+
+.imgTriangle {
+    height: 10px;
+    width: 10px;
+    margin-bottom: 7px;
+}
+
+.arialFontFamily:active, .georgiaFontFamily:active, .impactFontFamily:active, .tahomaFontFamily:active, .romanFontFamily:active, .verdanaFontFamily:active {
+    color: white;
+    background-color: blue;
+}
+
+.fontsSize {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: -85px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: none;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+    width: 180px;
+}
+
+.fontsSize__px {
+    padding-left: 35px;
+    line-height: 35px;
+    height: 35px;
+}
+
+.fontsSize__px:hover {
+    background-color: lightgrey;
+}
+
+.fontsSize__px:active {
+    color: white;
+    background-color: blue;
+}
+
+.fontsSize__12px {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.fontsSize__14px {
+    font-size: 14px;
+}
+
+.fontsSize__16px {
+    font-size: 16px;
+}
+
+.fontsSize__18px {
+    font-size: 18px;
+}
+
+.fontsSize__20px {
+    font-size: 20px;
+}
+
+.fontsSize__22px {
+    font-size: 22px;
+}
+
+.fontsSize__25px {
+    font-size: 25px;
+}
+
+.fontsSize__30px {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.textColor__text {
+    height: 50px;
+    width: 600px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.textColor__text--choose {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.textColor {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: -400px;
+    background-color: white;
+    position: fixed;
+    display: none;
+}
+
+.allTextColor {
+    height: 75px;
+    width: 75px;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+    border: none;
+}
+
+.xColor {
+    width: 600px;
+    height: 270px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.allTextColor:focus {
+    outline: none;
+    border: none;
+}
+
+.textColor__aquamarine {
+    background-color: aquamarine;
+}
+
+.textColor__cadetblue {
+    background-color: cadetblue;
+}
+
+.textColor__forestgreen {
+    background-color: forestgreen;
+}
+
+.textColor__green {
+    background-color: green;
+}
+
+.textColor__lightblue {
+    background-color: lightblue;
+}
+
+.textColor__blue {
+    background-color: blue;
+}
+
+.textColor__blueviolet {
+    background-color: blueviolet;
+}
+
+.textColor__darkorchid {
+    background-color: darkorchid;
+}
+
+.textColor__darkslateblue {
+    background-color: darkslateblue;
+}
+
+.textColor__darkslategray {
+    background-color: darkslategray;
+}
+
+.textColor__yellow {
+    background-color: yellow;
+}
+
+.textColor__orange {
+    background-color: orange;
+}
+
+.textColor__darkorange {
+    background-color: darkorange;
+}
+
+.textColor__darkgoldenrod {
+    background-color: darkgoldenrod;
+}
+
+.textColor__coral {
+    background-color: coral;
+}
+
+.textColor__brown {
+    background-color: brown;
+}
+
+.textColor__whitesmoke {
+    background-color: whitesmoke;
+}
+
+.textColor__aliceblue {
+    background-color: aliceblue;
+}
+
+.textColor__gray {
+    background-color: gray;
+}
+
+.textColor__darkgray {
+    background-color: darkgray;
+}
+
+.textColor__black {
+    background-color: black;
+}
+
+.closeTextColor {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.bgColor {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: -400px;
+    background-color: white;
+    position: fixed;
+    display: none;
+}
+
+.closeBgColor {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.bgColor__text--choose {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bgColor__text {
+    height: 50px;
+    width: 600px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.xBgColor {
+    width: 600px;
+    height: 270px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navButton {
+    height: 40px;
+    width: 600px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.colors {
+    height: 40px;
+    width: 70px;
+    border-top: none;
+    border-bottom: none;
+    background-color: white;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    color: black;
+}
+
+.images {
+    margin-left: -7px;
+    height: 40px;
+    width: 70px;
+    border-top: none;
+    border-bottom: none;
+    background-color: white;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    color: blue;
+}
+
+.images:focus {
+    outline: none;
+    color: black;
+}
+
+.files {
+    margin-left: -7px;
+    height: 40px;
+    width: 70px;
+    border-top: none;
+    border-bottom: none;
+    background-color: white;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    color: blue;
+}
+
+.files:focus {
+    outline: none;
+    color: black;
+}
+
+.allbgImage {
+    width: 600px;
+    height: 270px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    user-select: none;
+    display: none;
+}
+
+.bgImage {
+    width: 180px;
+    height: 75px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+.bgImage1 {
+    background-image: url(../img/5563b8b21201f.jpg);
+}
+
+.bgImage2 {
+    background-image: url(../img/dfdf.jpg);
+}
+
+.bgImage3 {
+    background-image: url(../img/Laurie_Nature_Bee.jpg);
+}
+
+.bgImage4 {
+    background-image: url(../img/ff.jpg);
+}
+
+.bgImage5 {
+    background-image: url(../img/qq.jpg);
+}
+
+.bgImage6 {
+    background-image: url(../img/rr.jpg);
+}
+
+.bgImage7 {
+    background-image: url(../img/xx.jpg);
+}
+
+.bgImage8 {
+    background-image: url(../img/cc.jpg);
+}
+
+.bgImage9 {
+    background-image: url(../img/m.jpg);
+}
+
+.downloadImage {
+    height: 60px;
+    line-height: 60px;
+    display: none;
+}
+
+.signIn__input--text {
+    margin-top: 10px;
+}
+
+.loginNav {
+    width: 100%;
+    height: 150px;
+    background-color: slategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+}
+
+.textareaScreen {
+    width: 100%;
+    min-height: 75vh;
+    padding: 20px;
+    resize: none;
+    outline: none;
+    border: none;
+    line-height: 1.9em;
+    display: none;
+}
+
+.emptyDiv {
+    display: none;
+    margin-left: 20px;
+}
