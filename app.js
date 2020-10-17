@@ -357,7 +357,7 @@ let bgImage9 = document.querySelector('.bgImage9');
 
 // Вішаю подію клік на блок з картинкою.... і задаю її бекгаундом імейдж
 bgImage1.addEventListener('click', function () {
-    text.style.backgroundImage = 'url(../img/5563b8b21201f.jpg)';
+    text.style.backgroundImage = 'url(./img/5563b8b21201f.jpg)';
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
     document.querySelector('.bgColor').style.display = 'none';
@@ -367,7 +367,7 @@ bgImage1.addEventListener('click', function () {
 });
 
 bgImage2.addEventListener('click', function () {
-    text.style.backgroundImage = 'url(../img/dfdf.jpg)';
+    text.style.backgroundImage = 'url(./img/dfdf.jpg)';
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
     document.querySelector('.bgColor').style.display = 'none';
@@ -377,7 +377,7 @@ bgImage2.addEventListener('click', function () {
 });
 
 bgImage3.addEventListener('click', function () {
-    text.style.backgroundImage = 'url(../img/Laurie_Nature_Bee.jpg)';
+    text.style.backgroundImage = 'url(./img/Laurie_Nature_Bee.jpg)';
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
     document.querySelector('.bgColor').style.display = 'none';
@@ -387,7 +387,7 @@ bgImage3.addEventListener('click', function () {
 });
 
 bgImage4.addEventListener('click', function () {
-    text.style.backgroundImage = 'url(../img/ff.jpg)';
+    text.style.backgroundImage = 'url(./img/ff.jpg)';
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
     document.querySelector('.bgColor').style.display = 'none';
@@ -397,7 +397,7 @@ bgImage4.addEventListener('click', function () {
 });
 
 bgImage5.addEventListener('click', function () {
-    text.style.backgroundImage = 'url(../img/qq.jpg)';
+    text.style.backgroundImage = 'url(./img/qq.jpg)';
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
     document.querySelector('.bgColor').style.display = 'none';
@@ -407,7 +407,7 @@ bgImage5.addEventListener('click', function () {
 });
 
 bgImage6.addEventListener('click', function () {
-    text.style.backgroundImage = 'url(../img/rr.jpg)';
+    text.style.backgroundImage = 'url(./img/rr.jpg)';
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
     document.querySelector('.bgColor').style.display = 'none';
@@ -417,7 +417,7 @@ bgImage6.addEventListener('click', function () {
 });
 
 bgImage7.addEventListener('click', function () {
-    text.style.backgroundImage = 'url(../img/xx.jpg)';
+    text.style.backgroundImage = 'url(./img/xx.jpg)';
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
     document.querySelector('.bgColor').style.display = 'none';
@@ -427,7 +427,7 @@ bgImage7.addEventListener('click', function () {
 });
 
 bgImage8.addEventListener('click', function () {
-    text.style.backgroundImage = 'url(../img/cc.jpg)';
+    text.style.backgroundImage = 'url(./img/cc.jpg)';
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
     document.querySelector('.bgColor').style.display = 'none';
@@ -437,7 +437,7 @@ bgImage8.addEventListener('click', function () {
 });
 
 bgImage9.addEventListener('click', function () {
-    text.style.backgroundImage = 'url(../img/m.jpg)';
+    text.style.backgroundImage = 'url(./img/m.jpg)';
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
     document.querySelector('.bgColor').style.display = 'none';
@@ -452,6 +452,7 @@ document.querySelector('#file').addEventListener('change', function (event) {
     text.style.backgroundImage = `url(${URL.createObjectURL(url)})`;
     text.style.backgroundPosition = 'center';
     text.style.backgroundSize = 'cover';
+    document.querySelector('.bgColor').style.display = 'none';
 });
 
 // Доступаюсь до кнопки з колодкою
@@ -476,6 +477,9 @@ document.querySelector('.signIn__button--sign').addEventListener('click', functi
         login.style.border = '1px solid red';
         password.style.border = '1px solid red';
     } else {
+        login.style.border = '1px solid rgba(0, 0, 0, 0.5)';
+        password.style.border = '1px solid rgba(0, 0, 0, 0.5)';
+        textLoginPassword.textContent = '';
         loginOn.style.display = 'none';
         document.querySelector('.onLoginNav__login--on').style.display = 'block';
         document.querySelector('.signIn').style.display = 'none';
